@@ -11,31 +11,6 @@
 обратном порядке, т.е. от большего к меньшему. */
 
 
-
-
-
-
-/* let firstNumberValue = +prompt('Enter your first number');
-let secondNumberValue = +prompt('Enter your second number');
-do {
-    firstNumberValue = +prompt('Enter your first number');
-    secondNumberValue = +prompt('Enter your second number');
-} while (Math.abs(firstNumberValue - secondNumberValue) < 5);
-for (let i = firstNumberValue; i <= secondNumberValue; i++) {
-    if ((firstNumberValue - secondNumberValue) < 5) {
-
-    }
-    console.log(i)
-
-};
-for (let i = firstNumberValue; i >= secondNumberValue; i--) {
-    console.log(i)
-};
- */
-
-
-
-
 let firstNumberValue = +prompt('Enter your first number');
 let secondNumberValue = +prompt('Enter your second number');
 if (Math.abs(firstNumberValue - secondNumberValue) < 5) {
