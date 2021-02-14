@@ -1,15 +1,4 @@
 'use strict'
-/* Создайте программу, которая выводит в консоль числа по нарастающей в диапазоне,
-обозначенном пользователем при помощи prompt.
-Примерный алгоритм
-1. Введите первое число диапазона
-2. Введите второе число диапазона
-3. Вывод чисел в консоль
-В случае, если диапазон чисел включает в себя менее пяти значений, у пользователя
-повторно запрашиваются корректные данные.
-В случае, если первое число диапазона больше второго, вывод чисел должен идти в
-обратном порядке, т.е. от большего к меньшему. */
-
 
 let firstNumberValue = +prompt('Enter your first number');
 let secondNumberValue = +prompt('Enter your second number');
@@ -33,3 +22,40 @@ if (Math.abs(firstNumberValue - secondNumberValue) < 5) {
     };
 };
 
+
+
+let pinCode;
+let pin = 123;
+let attempts = 0;
+let pucCode;
+let puc = 99;
+let pucCodeAttempts = 0;
+while (pinCode != pin && attempts < 3) {
+    pinCode = prompt('enter your PIN');
+    ++attempts
+    if (attempts === 1 && pinCode != pin) {
+        alert('two attempts left')
+    }
+    else if (attempts === 2 && pinCode != pin) {
+        alert('one attempts left')
+    }
+    else if (attempts === 3 && pinCode != pin) {
+        alert('invalid PIN-code')
+        while (pucCode != puc && pucCodeAttempts < 3) {
+            pucCode = prompt('enter your PUC');
+            ++pucCodeAttempts
+            if (pucCodeAttempts === 1 && pucCode != puc) {
+                alert('two attempts left')
+            }
+            else if (pucCodeAttempts === 2 && pucCode != puc) {
+                alert('one attempts left')
+            }
+            else if (pucCodeAttempts === 3 && pucCode != puc) {
+                alert('invalid PUC-code')
+            }
+        }
+    }
+}
+if (pinCode == pin || pucCode == puc) {
+    alert('welcome')
+}
