@@ -1,6 +1,6 @@
 'use strict'
 
-/* let firstNumberValue = +prompt('Enter your first number');
+let firstNumberValue = +prompt('Enter your first number');
 let secondNumberValue = +prompt('Enter your second number');
 if (Math.abs(firstNumberValue - secondNumberValue) < 5) {
     do {
@@ -21,10 +21,9 @@ if (Math.abs(firstNumberValue - secondNumberValue) < 5) {
         console.log(i);
     };
 };
- */
 
 
-/* let pinCode;
+let pinCode;
 let pin = 123;
 let attempts = 0;
 let pucCode;
@@ -58,7 +57,7 @@ while (pinCode != pin && attempts < 3) {
 }
 if (pinCode == pin || pucCode == puc) {
     alert('welcome')
-} */
+}
 
 
 let startOfRange = +prompt('enter first number');
@@ -80,3 +79,14 @@ for (let i = startOfRange; i <= endOfRange; i++) {
         console.log(i > 0 ? 'positive number' : 'negative number')
     }
 };
+
+
+let firstValueNumber = +prompt('Enter your first number');
+let secondValueNumber = +prompt('Enter your second number');
+let count = 0;
+for(let i = firstValueNumber; i <= secondValueNumber; i++){
+console.log(i)
+count++ == i
+if(count === 7) break
+}
+
